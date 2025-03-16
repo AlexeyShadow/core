@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { CourseItem } from "./course-item";
+import userEvent from "@testing-library/user-event";
 
 describe("course item", () => {
   it("should call delete callback", async () => {
@@ -8,9 +8,9 @@ describe("course item", () => {
     render(
       <CourseItem
         course={{
-          id: "asdfasd ",
-          description: "fasdf",
-          name: "fas;dklfj",
+          id: "777",
+          description: "Test course for tests",
+          name: "Test Co1",
         }}
         onDelete={onDelete}
       />,
